@@ -71,7 +71,7 @@ def stem(word):
 		return word
 
 	'If no bulgarian vowel - no valid word'
-	if not re_bg_vowels.match(word):
+	if not re_bg_vowels.search(word):
 		return word
 
 	'Convert to lower case in order to compare it easy'
